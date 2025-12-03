@@ -1,92 +1,48 @@
-# SuperCoach Football Analytics
+# 🏟️ SuperCoach — AI Football Analytics System
 
-*AI-powered football analytics project to build a “super coach camera” that helps players and coaches understand matches better.*
+SuperCoach is an AI-powered system designed to analyze football matches through video,  
+providing tactical insights, player recommendations, and performance feedback — like a **personal AI coach**.
 
----
+## 🎯 Objective
+Give players and coaches **real-time and post-match insights**:
+- Player tracking & movement heatmaps  
+- Tactical shape analysis (pressing, compactness, spacing)  
+- Event detection (passes, shots, runs, transitions)  
+- Player performance metrics  
+- AI recommendations to improve decision-making  
 
-## 🎯 Vision
+## 🧠 Technology
+- Python  
+- OpenCV  
+- YOLOv8 / YOLOv11 for player detection  
+- DeepSORT for player tracking  
+- Football metrics (xT, pitch control, pressing intensity)  
+- Keypoint detection for player posture (optional)  
 
-The long-term goal of this project is to create an AI assistant that acts like a **super coach**:
+## 🚀 Roadmap
+### Phase 1 — Foundations (Dec 2025)
+- [ ] Video → Player Detection (YOLO)  
+- [ ] Player Tracking (DeepSORT)  
+- [ ] Assign jersey numbers  
+- [ ] Pitch calibration  
 
-- Watches football games (video + event data)
-- Understands team shape, pressing, transitions and player decision-making
-- Gives **personalised feedback** to each player
-- Provides **extra tactical insights** to coaches about team play and weaknesses
+### Phase 2 — Tactical Intelligence (Jan–Feb 2026)
+- [ ] Compute heatmaps, sprint zones  
+- [ ] Team shape detection (4-4-2, 4-3-3, etc.)  
+- [ ] Pressing intensity (PPDA)  
+- [ ] Dangerous areas + Expected Threat (xT)  
+- [ ] Ball tracking  
 
-This repository is **Phase 1: data & analytics**.  
-Later phases will add **computer vision** and **reinforcement learning**.
+### Phase 3 — Coaching Insights (March 2026)
+- [ ] Player advice ("improve positioning on defensive transitions")  
+- [ ] Tactical notes ("the team loses compactness in minute 60–75")  
+- [ ] Automated report generation (PDF)  
 
----
+## 🧪 Sample videos
+(Add sample football clips here soon)
 
-## 🧱 Phase 1 – Data & Tactical Analytics (current repo)
+## 📦 Installation
+(Will be added once code is ready)
 
-Planned features:
-
-- Load open football data (e.g. StatsBomb Open Data / public datasets)
-- Build core metrics:
-  - Pass maps & heatmaps
-  - Shot maps and basic xG model
-  - Pressing intensity (PPDA-style metric)
-  - Player involvement & influence metrics
-  - Team possession and transition analysis
-- Create visualisations:
-  - Pass networks
-  - Touch maps
-  - xG timeline
-  - Player radar charts
-
-The goal is to create **clean, modular code** that can later connect to the video & RL modules.
-
----
-
-## 🧠 Future Phases
-
-### Phase 2 – SuperCoach Vision (Computer Vision)
-
-Planned second repository:
-
-- Detect and track players from broadcast video (YOLO + tracker)
-- Group players into teams (jersey colour clustering)
-- Reconstruct approximate positions on a 2D pitch
-- Extract trajectories, sprint intensity, and off-ball movement
-- Generate “coach view” tactical summaries from video clips
-
-### Phase 3 – SuperCoach RL (Decision Support)
-
-Planned third repository:
-
-- Create a simplified football simulation environment
-- Use **Reinforcement Learning (PPO/DQN)** to learn passing/pressing decisions
-- Compare AI agent decisions with real player decisions
-- Suggest alternative passing options or positioning tips
-
----
-
-## 🛠️ Tech Stack
-
-- Python
-- pandas, numpy
-- matplotlib / seaborn / plotly
-- (Later) PyTorch / Stable-Baselines3
-- (Later) YOLO, OpenCV
-
----
-
-## 📌 Status
-
-This project is currently in **early development**.  
-The first milestones are:
-
-1. ✅ Create project structure and documentation  
-2. ⏳ Add first notebook with event data analysis  
-3. ⏳ Implement simple xG model  
-4. ⏳ Add first visualisations (pass maps, heatmaps)  
-
----
-
-## 📬 Contact
-
-**Lucas Mesa Casellas**  
-AI & Data Science student (ESILV + Cranfield)  
-Interested in ML, RL trading bots & football analytics.  
-🔗 LinkedIn: https://www.linkedin.com/in/lucas-mesa-casellas
+## 📄 License
+MIT
