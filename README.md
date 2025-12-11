@@ -42,7 +42,8 @@ Give players and coaches **real-time and post-match insights**:
 (Add sample football clips here soon)
 
 ## 📦 Installation
-(Will be added once code is ready)
+Codebase under development.  
+A full installation guide will be added when the first working prototype is released.
 
 ## 📄 License
 MIT
